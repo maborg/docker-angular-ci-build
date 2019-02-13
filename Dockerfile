@@ -4,8 +4,9 @@ RUN apt-get update
 RUN apt-get install -yy wget curl gnupg
 RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
     apt-get update && apt-get install -y nodejs && \
-    npm install npm@5.7 -g \
-    npm install -g yarn
+    npm install npm@6.7.0 -g \
+    npm install -g yarn \
+    npm install -g @angular/cli
 RUN apt-get install git -y
 
 
